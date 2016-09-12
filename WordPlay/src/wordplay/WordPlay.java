@@ -23,7 +23,7 @@ public class WordPlay {
         }
     }
 
-    public static StringBuilder replaceVowels(String phrase, char ch) {
+    public static String replaceVowels(String phrase, char ch) {
        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < phrase.length(); i++) {
             char a = phrase.charAt(i);
@@ -34,11 +34,11 @@ public class WordPlay {
             }
         }
         System.out.println(sb);
-        return sb;
+        return sb.toString();
 
     }
     
-    public static StringBuilder emphasis(String phrase, char ch) {
+    public static String emphasis(String phrase, char ch) {
         
         StringBuilder sb = new StringBuilder();
         char x = Character.toLowerCase(ch);
@@ -54,7 +54,7 @@ public class WordPlay {
            }   
         }
         System.out.println(sb);
-        return sb;
+        return sb.toString();
         
     }
 
